@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Koridor Oyunu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+<div class="side-strips">
+
+    <div class="side-strip left-strip" id="left-strip-1"></div>
+
+    <div class="side-strip left-strip" id="left-strip-2"></div>
+
+    <div class="side-strip left-strip" id="left-strip-3"></div>
+
+    <div class="side-strip left-strip" id="left-strip-4"></div>
+
+    <div class="side-strip left-strip" id="left-strip-5"></div>
+
+    <div class="side-strip left-strip" id="left-strip-6"></div>
+
+    <div class="side-strip left-strip" id="left-strip-7"></div>
+
+    <div class="side-strip left-strip" id="left-strip-8"></div>
+
+    <div class="side-strip left-strip" id="left-strip-9"></div>
+
+    <div class="side-strip left-strip" id="left-strip-10"></div>
+
+
+    <div class="side-strip right-strip" id="right-strip-1"></div>
+
+    <div class="side-strip right-strip" id="right-strip-2"></div>
+
+    <div class="side-strip right-strip" id="right-strip-3"></div>
+
+    <div class="side-strip right-strip" id="right-strip-4"></div>
+
+    <div class="side-strip right-strip" id="right-strip-5"></div>
+
+    <div class="side-strip right-strip" id="right-strip-6"></div>
+
+    <div class="side-strip right-strip" id="right-strip-7"></div>
+
+    <div class="side-strip right-strip" id="right-strip-8"></div>
+
+    <div class="side-strip right-strip" id="right-strip-9"></div>
+
+    <div class="side-strip right-strip" id="right-strip-10"></div>
+
+</div>
+<div id="question-modal" class="modal" style="display: none;">
+
+    <div class="modal-content">
+
+        <p id="question-text"></p>
+
+        <div id="options-container"></div>
+
+        <button id="no-answer" class="button">Cevap Engellerde Yok</button> 
+    </div>
+
+</div>
+
+<main class="container">
+    <h1 class="title">Matematik Koridor Oyunu</h1>
+    <div id="game"></div>
+    <div class="player-stats">
+        <div class="player-stat player-1">
+            <h2 class="player-name">Oyuncu 1</h2>
+            <p class="player-walls">Kalan Engel: <span id="player-1-walls-left">10</span></p>
+        </div>
+        <div class="player-stat player-2">
+            <h2 class="player-name">Oyuncu 2</h2>
+            <p class="player-walls">Kalan Engel: <span id="player-2-walls-left">10</span></p>
+        </div>
+    </div>
+    <button id="toggle-wall" class="button">Engel Yerleştir</button>
+
+</main>
+<script src="sketch.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2K4G4LZ2KG');
+</script>
+</body>
+</html>
